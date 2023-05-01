@@ -1,5 +1,5 @@
 body {
-    background-color: #6b79d2;
+    background-color: #000000;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,7 +9,7 @@ body {
   }
   
   .bg-img {
-    background-image: url('/img/image.png');
+    background-image: url('/img/image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
