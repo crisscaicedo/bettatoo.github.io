@@ -1,0 +1,105 @@
+body {
+    background-color: #6b79d2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .bg-img {
+    background-image: url('/img/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .bg-img.left {
+    transform: translateX(-40%);
+  }
+  .bg-img.center {
+    transform: translateX(0%);
+  }
+  
+  .bg-img.form-active {
+    transform: translateX(-50%);
+  }
+  
+  .overlay {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .form-col {
+    height: 100vh;
+    position: relative;
+  }
+  
+  .form-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 50px;
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    transition: left 0.5s;
+  }
+  
+  .form-wrapper.active {
+    left: 50%;
+  }
+  
+  .form-wrapper.success {
+    left: 100%;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+  }
+  
+  .bg-img:hover .overlay {
+    opacity: 0.8;
+  }
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* Styles for devices with a maximum width of 767px */
+  .bg-img {
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Styles for devices with a maximum width of 576px */
+  body {
+    font-size: 14px;
+  }
+}
